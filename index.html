@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+		<div>
+			<svg id = "svg_chart" >
+				<rect x="680" y="600" width="14" height="14" fill="#decbe4" style="opacity: 0.7"></rect>
+                <rect x="680" y="620" width="14" height="14" fill="#ccebc5" style="opacity: 0.7"></rect>
+                <rect x="680" y="640" width="14" height="14" fill="#b3cde3" style="opacity: 0.7"></rect>
+                <rect x="680" y="660" width="14" height="14" fill="#fbb4ae" style="opacity: 0.7"></rect>
+                <text x="700" y="610" class="">Europe</text>
+                <text x="700" y="630" class="">Asia</text>
+                <text x="700" y="650" class="">Americas</text>
+                <text x="700" y="670" class="">Africa</text>
+			</svg>
+        </div>
+        <p >Number of points: <input min=0 max=214 value=0 type="range" id="slider"></p>
+        <button  onclick="play()" id="animate" value="Play">Play</button>
+	
+	<label  for = "continent"> Continents </label>
+	<form  onchange = "gooo()">
+		<select  id ="country">
+			<option value ="all">ALL</option>
+			<option value ="asia">Asia</option>
+			<option value ="europe">Europe</option>
+			<option value ="americas">Americas</option>
+			<option value ="africa">Africa</option>
+		</select>
+	</form>
+	
+    </div>
+    
+    
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
